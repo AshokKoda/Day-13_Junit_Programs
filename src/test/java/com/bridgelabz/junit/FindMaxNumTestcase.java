@@ -100,5 +100,27 @@ public class FindMaxNumTestcase {
 		Assert.assertNotEquals(25.0, result, DELTA);
 	}
 	
+	@Test
+	public void testPassString() {
+		String s1 = new String("Apple");
+		String s2 = new String("Peache");
+		String s3 = new String("Bananna");
+		int r1 = s1.length();
+		int r2 = s2.length();
+		int r3 = s3.length();
+		Assert.assertEquals(r3, r3, DELTA);
+	}
+	
+	@Test
+	public void testFailString() {
+		String s1 = new String("Apple");
+		String s2 = new String("Peache");
+		String s3 = new String("Bananna");
+		int r1 = s1.length();
+		int r2 = s2.length();
+		int r3 = s3.length();
+		Assert.assertEquals(r3, r2, DELTA);
+	}
+	
 
 }
