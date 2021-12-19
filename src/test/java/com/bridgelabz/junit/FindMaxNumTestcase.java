@@ -39,5 +39,22 @@ public class FindMaxNumTestcase {
 		int result = c > (a > b ? a : b) ? c : ((a > b) ? a : b);
 		Assert.assertEquals(10, result);
 	}
+	
+	/*
+	 * Max number at 3rd position
+	 */
+	@Test
+	public void testPass3() {
+		int a = 15, b = 20, c = 25;
+		int result = c > (a > b ? a : b) ? c : ((a > b) ? a : b);
+		Assert.assertEquals(25, result);
+	}
+	
+	@Test
+	public void testFail3() {
+		int a = 15, b = 20, c = 25;
+		int result = c > (a > b ? a : b) ? c : ((a > b) ? a : b);
+		Assert.assertEquals(10, result);
+	}
 
 }
